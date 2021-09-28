@@ -37,7 +37,7 @@ function runTextAnimation(index) {
         setTimeout(function() {
             text.innerHTML = strings[index];
             setTimeout(function() {
-                text.innerHTML = "";
+                text.innerHTML = "...";
                 runTextAnimation(index+1);
             }, 4000);
         }, 3000);

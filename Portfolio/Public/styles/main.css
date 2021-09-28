@@ -461,3 +461,11 @@
     text-align: center;
   }
 
+  #bigRedButton {
+    background-color: rgb(190, 16, 16);
+    color: black;
+    width: fit-content;
+    padding: 3px;
+    border: black 2px solid;
+  }
+
