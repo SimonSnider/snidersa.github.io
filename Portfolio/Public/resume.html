@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Simon Snider's personal website</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
 
-    <body>
-        <nav style="background-color: grey;">
-            <li style="display: inline;"><a href="index.html">About</a></li>
-            <li style="display: inline;"><a href="portfolio.html">Portfolio</a></li>
-            <li style="display: inline;" target="_blank"><a href="resume.html">Resume</a></li>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simon Snider's personal website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Simon Snider</h1>
+        <nav>
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <!-- <li><a href="Simon Snider - Resume.pdf"  target="_blank">Resume PDF</a></li> -->
+            <li><a href="resume.html">Resume</a></li>
+            <li><button id="bigRedButton">Big Red Button</button></li>
         </nav>
-        <main>
-            <h1>Resume Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor hendrerit ligula vitae mattis. Sed tempus consectetur consectetur. Vivamus ut purus purus. Etiam auctor nisl ac mollis dignissim. Aliquam volutpat purus vitae nunc euismod pulvinar. Nulla maximus enim et enim porttitor, a lobortis mauris lobortis. Ut a nisi ullamcorper, aliquet felis porttitor, vulputate felis. Aliquam porta libero nec odio cursus tempor vitae ac turpis.</p>
-            <p>Fusce iaculis sed felis et egestas. Suspendisse blandit, sem vitae laoreet dignissim, nulla lacus interdum erat, ut viverra risus dolor sed lacus. Etiam aliquet nisl elementum, lobortis nisi ullamcorper, sagittis mi. Nullam quis pulvinar elit, ac fermentum ligula. Maecenas vehicula sollicitudin est malesuada dapibus. Integer dignissim vehicula ipsum sit amet tempor. Ut nibh mauris, venenatis id ligula id, gravida fringilla libero. Donec sit amet nunc hendrerit, posuere nisl vel, interdum leo. Ut dictum accumsan elit et facilisis. Quisque vulputate ligula eu tempus ornare. Etiam et est nec ipsum viverra laoreet. Curabitur blandit ex ex, quis aliquet nisi laoreet sed. Vestibulum ligula tellus, ultricies eget nisl quis, fringilla sagittis libero.</p>
-            <script src="scripts/main.js"></script>
-        </main>
-        <footer style="background-color: grey;">
-            contact info here
-        </footer>
-    </body>
+    </header>
+    <main id="resumeMain">
+        <div id="contactInfo">
+            <h2>812-881-7731</h2>
+            <h2>simonsnider@gmail.com</h2>
+            <h2>2496 S. Harvest Acres Dr.</h2>
+            <h2>Vincennes, IN</h2>
+        </div>
+        <div>
+            <h3>Objective</h3>
+            <p>To get a job in the software development industry</p>
+        </div>
+        <div>
+            <h3>Education</h3>
+            <div>
+                <p>Bachelor of Science, Computer Science</p>
+                <p>Rose-Hulman Institute of Technology, Terre Haute, IN</p>
+                <p>Spring 2022, GPA 3.46</p>
+            </div>
+            <br>
+            <div>
+                <p>Associate of Science, Computer Science</p>
+                <p>Vincennes University, Vincennes, IN</p>
+                <p>Spring 2019</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h3>Skills</h3>
+            <ul>
+                <li>Machine/Deep Learning</li>
+                <li>Object oriented software</li>
+                <li>Algorithm Analysis</li>
+                <li>Experience in using Java, C, SQL, and Python</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Relevant Courses</h3>
+            <p style="max-width: 600px;">
+                Data Structures and Algorithm Analysis, Programming Language Concepts, Computer
+                Architecture 1 & 2, Introduction to Computer Systems, Intro to Database Systems,
+                Operating Systems, Software Requirements Engineering
+            </p>
+        </div>
+
+        <div>
+            <h3>Experience</h3>
+            <h4>Keysight-Ixia Software Developer Intern</h4>
+            <p>Keysight Technologies</p>
+            <ul>
+                <li>
+                    Worked as a software development intern at Keysight on team Ixia developing the
+                    A400GE-QDD system
+                </li>
+                <li>
+                    Used Typescript and Angular to implement new features on the A400GE’s server
+                    and updated the server’s GUI.
+                </li>
+            </ul>
+            <h4>Reach-Your-Teacher</h4>
+            <p>Techpoint S.O.S. Challenge</p>
+            <ul>
+                <li>
+                    Participated in Techpoint’s S.O.S. challenge to design an application to fulfill a need
+                    during the 2020 Covid-19 pandemic.
+                </li>
+                <li>
+                    Designed an application in a team of 6 developers to facilitate a safe environment
+                    for teachers and grade-school students to communicate easily.
+                </li>
+            </ul>
+            <h4>A.I. Cleaning Robots</h4>
+            <p>Artificial Intelligence – Rose-Hulman Institute of Technology</p>
+            <ul>
+                <li>
+                    Implemented a utility matrix to guide a digital robot to clean a grid of tiles using
+                    the most efficient path possible.
+                </li>
+                <li>Used natural language processing to parse typed commands for the robot.</li>
+            </ul>
+            <h4>Baremetal OS</h4>
+            <p>Operating Systems – Rose-Hulman Institute of Technology</p>
+            <ul>
+                <li>
+                    Designed a simple operating system using C in Linux, including a custom Kernel
+                    and file storage system.
+                </li>
+                <li>
+                    Implemented a scheduler to handle running multiple processes simultaneously.
+                </li>
+            </ul>
+            <h4>My-Rose-Carillon</h4>
+            <p>Android Application Development – Rose-Hulman Institute of Technology</p>
+            <ul>
+                <li>
+                    Developed a social media Android application for students of Rose-Hulman to
+                    create and vote on songs to be played on the Rose-Hulman bell tower.
+                </li>
+                <li>Connected the app to Firebase to store and retrieve user data and midi files.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Clubs and Activities</h3>
+            <ul>
+                <li>Concert Band – Vincennes University, South Knox High School - 2011-2019</li>
+                <li>Drama Club – Rose-Hulman - 2020-2021</li>
+                <li>Swing Dance Club Secretary and President – Rose-Hulman - 2020-2021</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Please feel free to contact me through email at: SimonSnider@gmail.com</p>
+        <h4 id="animatedText"></h4>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/box-2d.js"></script>
+</body>
+
 </html>

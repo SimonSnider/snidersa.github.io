@@ -4,24 +4,36 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Simon Snider's personal website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
     <body id="About">
-        <nav style="background-color: grey;">
-            <li style="display: inline;"><a href="index.html">About</a></li>
-            <li style="display: inline;"><a href="portfolio.html">Portfolio</a></li>
-            <li style="display: inline;"><a href="Simon Snider - Resume.pdf"  target="_blank">Resume</a></li>
-        </nav>
+        <header>
+            <h1 class="gravityTarget">Simon Snider</h1>
+            <nav>
+                <li class="gravityTarget"><a href="index.html">About</a></li>
+                <li class="gravityTarget"><a href="portfolio.html">Portfolio</a></li>
+                <!-- <li><a href="Simon Snider - Resume.pdf"  target="_blank">Resume PDF</a></li> -->
+                <li class="gravityTarget"><a href="resume.html">Resume</a></li>
+                <li class="gravityTarget"><button id="bigRedButton">Big Red Button</button></li>
+            </nav>
+        </header>
         <main>
-            <h1>Simon Snider</h1>
-            <img src="images/avatar.png" style="width: 200px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor hendrerit ligula vitae mattis. Sed tempus consectetur consectetur. Vivamus ut purus purus. Etiam auctor nisl ac mollis dignissim. Aliquam volutpat purus vitae nunc euismod pulvinar. Nulla maximus enim et enim porttitor, a lobortis mauris lobortis. Ut a nisi ullamcorper, aliquet felis porttitor, vulputate felis. Aliquam porta libero nec odio cursus tempor vitae ac turpis.</p>
-            <p>Fusce iaculis sed felis et egestas. Suspendisse blandit, sem vitae laoreet dignissim, nulla lacus interdum erat, ut viverra risus dolor sed lacus. Etiam aliquet nisl elementum, lobortis nisi ullamcorper, sagittis mi. Nullam quis pulvinar elit, ac fermentum ligula. Maecenas vehicula sollicitudin est malesuada dapibus. Integer dignissim vehicula ipsum sit amet tempor. Ut nibh mauris, venenatis id ligula id, gravida fringilla libero. Donec sit amet nunc hendrerit, posuere nisl vel, interdum leo. Ut dictum accumsan elit et facilisis. Quisque vulputate ligula eu tempus ornare. Etiam et est nec ipsum viverra laoreet. Curabitur blandit ex ex, quis aliquet nisi laoreet sed. Vestibulum ligula tellus, ultricies eget nisl quis, fringilla sagittis libero.</p>
-            <script src="scripts/main.js"></script>
+            <h2 class="gravityTarget">Stay a while and listen</h2>
+            <img src="images/avatar.png" style="height: 15em;" class="gravityTarget">
+            <h3 class="gravityTarget">Hi! I'm Simon Snider, thanks for stopping by!</h3>
+            <p class="tooLarge">I am a Computer Science Senior at Rose-Hulman Institute of Technology, about to graduate and earn my Bachelors of Computer Science. I've had a passion for software development since I was a sophomore in highschool. My early education in CS came from finding online classes outside of school to learn more about programming becaues my school didn't offer anything CS related. Since then my classes at Rose have given me lots of experience with both frontend and backend development using Java, C, SQL, HTML and CSS,</p>
+            <p class="tooLarge">My most recent work experience was as a software developer at Keysight Technologies, where I worked on both the front-end and the middleware of one of their newer products. I gained experience using Javascript with Angular in creating user-friendly UI's with powerful functionality such as giving clients the ability to upload custom python scripts and run them on remote chassis used for testing equipment.</p>
+            <p class="tooLarge">I am most experienced in using Java and C for development purposes, but I am also familiar with using Python for machine/deep learning. One area of CS that I am particularly interested in and am always excited to learn about is Artificial Intelligence and deep learning.</p>
+            <p class="gravityTarget">Cheers!</p>
         </main>
-        <footer style="background-color: grey;">
-            contact info here
+        <footer>
+            <p class="gravityTarget">Please feel free to contact me through email at: SimonSnider@gmail.com</p>
+            <h4 id="animatedText"></h4>
         </footer>
+        <script src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/box-2d.js"></script>
     </body>
 </html>

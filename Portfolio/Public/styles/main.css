@@ -7,6 +7,13 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+
+:root {
+  --light-color: #7BA9D1;
+  --dark-color: #304252;
+  --accent-color: #C1CED9;
+}
 
  html {
     line-height: 1.15; /* 1 */
@@ -347,3 +354,110 @@
   [hidden] {
     display: none;
   }
+
+  p {
+    max-width: 50em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1,h2,h3,h4 {
+    line-height: 1.2;
+    font-family: 'Righteous', cursive;
+  }
+
+  body {
+    /* padding: 0em 4em; */
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    
+  }
+
+  @media screen and (min-width: 25em) {
+    body {
+     
+    }
+
+    body > * {
+      padding-left: 4rem;
+    }
+  }
+
+  header {
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+
+    padding-top: 1rem;
+    padding-bottom: 0.66rem;
+  }
+
+  body > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+  }
+
+  #resumeMain {
+    display: flex;
+    flex-direction: column;
+    align-items:initial;
+    padding: 0 3rem;
+  }
+
+  #resumeMain h3 {
+    text-decoration: underline;
+  }
+
+  #contactInfo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body > footer {
+    background-color: var(--accent-color);
+  }
+
+  header, footer {
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+  }
+
+  header h1, footer h1 {
+    margin: 0;
+  }
+
+  body > * {
+    padding-left: 0.5rem;
+  }
+
+  nav > li {
+    display: inline;
+    margin: 0 2px;
+    border-right: 2px solid;
+    padding-right: 5px;
+  }
+
+  a {
+    color: var(--dark-color);
+    text-decoration-color: var(--accent-color);
+  }
+
+  a:hover {
+    color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
+  }
+
+  #animatedText {
+    text-align: center;
+  }
+
